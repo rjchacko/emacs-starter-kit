@@ -70,9 +70,11 @@
 (require 'starter-kit-js)
 (require 'starter-kit-python)
 (require 'starter-kit-completion)
-
+(require 'starter-kit-org)
 (regen-autoloads)
 (load custom-file 'noerror)
+
+(load "appearance.el")
 
 ;; You can keep system- or user-specific customizations here
 (setq system-specific-config (concat dotfiles-dir system-name ".el")

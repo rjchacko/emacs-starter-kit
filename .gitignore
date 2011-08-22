@@ -24,3 +24,4 @@ history
 *.pyc
 ac-comphist.dat
 .#*
+agenda.el
