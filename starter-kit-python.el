@@ -1,5 +1,6 @@
 ;; starter-kit-python.el - setup of python stuff
 (require 'pymacs (concat dotfiles-dir "elpa-to-submit/pymacs.el"))
+(autoload 'python-mode "python-mode" "Python Mode." t)
 
 (defun setup-ropemacs ()
   "Setup the ropemacs harness"
@@ -31,7 +32,7 @@
 (setq flymake-enable-pep8 nil)
 
 ;; Python or python mode?
-(eval-after-load 'python
+(eval-after-load 'python-mode
   '(progn
      ;;==================================================
      ;; Ropemacs Configuration
