@@ -22,3 +22,5 @@ tramp
 \#*
 history
 *.pyc
+ac-comphist.dat
+.#*
