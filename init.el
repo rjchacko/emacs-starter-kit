@@ -54,6 +54,7 @@
 (require 'autopair)
 (require 'yasnippet)
 
+
 ;; backport some functionality to Emacs 22 if needed
 (require 'dominating-file)
 
@@ -88,3 +89,4 @@
   (mapc #'load (directory-files user-specific-dir nil ".*el$")))
 
 ;;; init.el ends here
+(put 'dired-find-alternate-file 'disabled nil)
