@@ -1,8 +1,10 @@
 (require 'color-theme)
 (load-library "themes/color-theme-library.el")
 (load-library "themes/color-theme-mac-classic.el")
-(color-theme-mac-classic)
+(require 'color-theme-solarized)
+(color-theme-solarized-light)
+
 (add-to-list 'default-frame-alist
-             '(font . "-apple-Courier_New-medium-normal-normal-*-*-*-*-*-m-0-iso10646-1"))
-(set-face-attribute 'default nil :height 120)
+             '(font . "-apple-Bitstream_Vera_Sans_Mono-medium-normal-normal-*-*-*-*-*-m-0-iso10646-1"))
+(set-face-attribute 'default nil :height 130)
 (blink-cursor-mode t)

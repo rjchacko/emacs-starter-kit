@@ -2,6 +2,9 @@
 
 (load "agenda.el")
 
+(setq org-todo-keywords
+      '((sequence "TODO" "WAITING"  "|" "DONE" "DELEGATED")))
+
 (require 'org-latex)
 
 (unless
