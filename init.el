@@ -101,6 +101,8 @@
 (if (file-exists-p user-specific-dir)
   (mapc #'load (directory-files user-specific-dir nil ".*el$")))
 
+(setq flymake-gui-warnings-enabled nil)
+
 ;;; init.el ends here
 (put 'dired-find-alternate-file 'disabled nil)
 (setq cua-enable-cua-keys nil)
