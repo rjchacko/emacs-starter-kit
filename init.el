@@ -79,12 +79,12 @@
 (epy-setup-checker "/Library/Frameworks/EPD64.framework/Versions/Current/bin/pyflakes %f")
 (epy-setup-ipython)
 (global-hl-line-mode t) ;; To enable
- (set-face-background 'hl-line "lavender") ;; change with the color that you like
+(set-face-background 'hl-line "lavender") ;; change with the color that you like
                                         ;; for a list of colors: http://raebear.net/comp/emacscolors.html
 
 (require 'highlight-indentation)
 (add-hook 'python-mode-hook 'highlight-indentation)
-
+(setq skeleton-pair nil) 
 (regen-autoloads)
 (load custom-file 'noerror)
 
