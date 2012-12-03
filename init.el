@@ -75,6 +75,15 @@
 (require 'starter-kit-completion)
 (require 'starter-kit-org)
 
+(load-file "/Users/rjchacko/.emacs.d/emacs-for-python/epy-init.el")
+(epy-setup-checker "/Library/Frameworks/EPD64.framework/Versions/Current/bin/pyflakes %f")
+(epy-setup-ipython)
+(global-hl-line-mode t) ;; To enable
+ (set-face-background 'hl-line "lavender") ;; change with the color that you like
+                                        ;; for a list of colors: http://raebear.net/comp/emacscolors.html
+
+(require 'highlight-indentation)
+(add-hook 'python-mode-hook 'highlight-indentation)
 
 (regen-autoloads)
 (load custom-file 'noerror)
